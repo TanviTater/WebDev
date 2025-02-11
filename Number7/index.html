@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video,Audio & MEdia</title>
+</head>
+<body>
+
+
+
+    <!-- poster is just like a thumbnail in a youtube video -->
+    <video src="Video.mp4" width="255" controls poster="wallpaper.jpg"></video>
+    <!-- Attributes for <video> Tag
+    src: Specifies the path to the video file.
+    controls: Adds video controls, like play, pause, and volume.
+    autoplay: Automatically starts playing the video when the page loads.
+    loop: Repeats the video once it ends.
+    muted: Mutes the video by default.
+    poster: Specifies an image to be displayed before the video starts playing.
+    width and height: Specifies the dimensions of the video. -->
+
+
+
+    <audio src="https://youtube.com/shorts/0gvsyouDCds?si=N-PM1njipgOfCDul" controls></audio>
+    <!-- Attributes for <audio> Tag
+    src: Specifies the path to the audio file.
+    controls: Adds audio controls, like play, pause, and volume.
+    autoplay: Automatically starts playing the audio when the page loads.
+    loop: Repeats the audio once it ends.
+    muted: Mutes the audio by default.
+    preload: Specifies if and how the audio should be loaded when the page loads ('auto', 'metadata', 'none'). -->
+    <!-- The "preload" attribute can have the following values:
+
+    none: This is the default value. It indicates that the browser should not preload the audio file at all. The audio file will only start downloading when the user initiates playback.
+    
+    metadata: This value tells the browser to preload only the metadata of the audio file, such as its duration and basic information about the audio. This can be useful if you want to display the audio duration to the user without fully loading the audio data.
+    
+    auto: This value instructs the browser to preload the entire audio file as much as possible without delaying the loading of other important page content. The browser will try to load the audio file in the background so that it's ready to play when the user decides to start it. -->
+
+
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" fill="red"></circle>
+    </svg>
+    <img src="image.svg" alt="SVG Image">
+
+
+    <!-- iframe - to embedd another website in your website -->
+
+    <iframe src="https://www.bing.com/search?filters=ufn%3a%22Pilot+(pen+company)%22+sid%3a%22fdf6a156-2537-85b7-67cf-6dfaae6b1f8a%22&qs=MB&pq=piloy&sk=CSYN1&sc=16-5&pglt=297&q=pilot&cvid=b8b6a688b7b643ea8f238735feea5ada&gs_lcrp=EgRlZGdlKgYIABAuGEAyBggAEC4YQDIGCAEQRRg7MgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhAMgYICBBFGD3SAQgxNjgwajBqMagCALACAA&FORM=ANNTA1&PC=DCTS" width="444" height="444"></iframe>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Y3oiib0Dplo?si=xtNt8bi4-KxbIrz0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
