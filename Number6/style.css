@@ -1,0 +1,11 @@
+.red{
+    background-color: salmon;
+}
+/* . to access the class */
+.bg-yellow{
+    color: yellow;
+}
+/* # to access id */
+#firstdiv{
+    background-color: orangered;
+}
