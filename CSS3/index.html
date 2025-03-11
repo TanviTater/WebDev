@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /* Element selector */
+        div{
+            background-color: yellow;          
+        }
+
+        /* class selector */
+        .red{
+            background-color: red;
+        }
+        /* Id Selector */
+        #green{
+            background-color: green;
+        }
+        /* child selector */
+        /* This selector cant be used if we have a case like descendat selector */
+        div >p{
+            color: white;
+            background-color: brown;
+        }
+        /* descendant selector */
+        div p{
+            color: white;
+            background-color: pink;
+        }
+        /* universal selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo selector */
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color:green;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            color: white;
+            background-color: black;
+        }
+        /* p:first-child{
+            background-color: aqua;
+        } */
+    </style>
+</head>
+<body>
+    <div>
+        I am a Div
+    </div>
+    <div class = "red">
+        I am a Div and have a class red
+    </div>
+    <div id = "green">
+        I am a Div and have an id green
+    </div>
+    <div>
+        <p>I am a paragraph inside a div</p>
+    </div>
+    <div>
+        <article>
+            <p>I am a paragraph inside article inside div</p>
+        </article>
+    </div>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <a href="https://www.instagram2.com"target="_blank">Instagram</a>
+    <main class="one">
+        <p>I am first</p>
+        <p>I am second</p>
+    </main>
+</body>
+</html>
