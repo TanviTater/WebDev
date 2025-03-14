@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* HTML is the root element */
+        html{
+            font-size: 12px;
+        }
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1488px; */
+            width: 80vw;
+            height: 20vh;
+            margin: auto;  /* center the box  only if the element is block and not inline element*/
+            background-color: lightcyan;
+        }
+        .container{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 1488px; */
+            width: 80vw;
+            /* height: 70vh; */
+            min-height: 80vh;
+            font-size: 16px;
+            margin:23px auto;  /* center the box  only if the element is block and not inline element*/
+            background-color: lightcyan;
+        }
+        .container p{
+            /* EM */
+            font-size: 2em; /* em = inherited fontSize*numeric value before em   -> 16*2 = 32px */
+
+            /* REM */
+            /* font-size: 2rem; rem = root fontSize*numeric value before rem   -> 12*2 = 24px */
+        }
+        .mycont{
+            background-color: rebeccapurple;
+            border: 2px solid black;
+            box-sizing: border-box;
+            margin:23px auto;
+            color: white;
+            font-size: 22px;
+            /* width: 100vim; */
+            width:80vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Thsi is a box
+    </div>
+    <span class="box">
+        This is a span
+    </span>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum aut non, ut corporis porro repudiandae error nisi, qui alias minima vero beatae dolor! Repudiandae neque nobis assumenda voluptate dolores consectetur ipsum nam cupiditate temporibus nisi accusamus fugiat itaque maiores mollitia quae est animi, obcaecati architecto accusantium dicta reprehenderit eum quisquam eaque officia? Nam atque id sed.</p>
+    </div>
+    <div class="mycont">
+        i am a another container
+    </div>
+</body>
+</html>
