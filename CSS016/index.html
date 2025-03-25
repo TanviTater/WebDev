@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+    <style>
+        /* .box:first-child{
+            background-color: red;
+        } */
+        .box::first-line{
+            color: violet;
+        } 
+        .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+        /* Grouping  */
+        p,a,.box,[data-color="primary"]{
+            /* margin-top: 45px; */
+            padding-top: 45px;
+        }
+        /* nth child pseudos selector */
+        .box:nth-child(even){
+            background-color: yellow;
+        }
+        .box:nth-last-child(1){
+            background-color: greenyellow;
+        }
+        /* IMPORTANT  - > Pseudo elements*/
+        .boxes::before{
+            content: "Hey , I am Tanvi";
+        }
+        .boxes::after{
+            content: "Bye , have a great day !";
+        }
+        /* Works on selecting the objext on text */
+        /* .boxes::selection{  For specific pat of the page */
+        ::selection{  /* For the whole page */
+            background-color: black;
+            color: aqua;
+        }
+        .box::first-letter{
+            font-size: 45px;
+        }
+        input::placeholder{
+            color: blue;
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur qui incidunt atque dolorem optio quod fugit odio. Consequatur odit quaerat quod, mollitia vitae eaque et beatae nesciunt sequi neque deserunt. Adipisci molestiae, ducimus libero quaerat sapiente qui numquam! Hic soluta ipsam perspiciatis? Quas repellat voluptatem eaque. Voluptate accusantium quas cumque id. Reiciendis iure esse sit numquam, aliquam odio impedit a, iste facere voluptate, ea asperiores ipsam inventore maxime molestias? A rerum modi ab neque esse quos voluptatibus deserunt cumque nobis laborum repudiandae, corporis non pariatur necessitatibus beatae accusamus fugiat voluptate quod deleniti? Recusandae voluptate aspernatur sit, quod non debitis, consectetur omnis doloribus odio beatae est cupiditate alias cumque nisi sed facere laboriosam molestias quas corrupti deleniti! Dicta fugit minus minima, nemo laudantium exercitationem voluptatum suscipit et numquam dignissimos iure magnam totam ex qui quasi molestias ab voluptatibus id animi! Excepturi maxime deleniti culpa laboriosam aperiam quae nemo quibusdam iste vero eveniet aspernatur fugiat autem iusto quia beatae illum hic repudiandae aliquam, totam officiis dolorem vitae dicta? Voluptate quis esse magni iure quo? Reprehenderit omnis laborum cum placeat assumenda asperiores repellendus corrupti, harum voluptates laboriosam sit at doloremque veritatis rerum earum, eum voluptatum. Corrupti blanditiis a cupiditate, omnis fugiat architecto nam!</div>
+        <div class="box">Hey I am a Box</div>
+        <div class="box">Hey I am a Box</div>
+        <input type="text" placeholder="Enter your name">
+    </div>
+</body>
+</html>
