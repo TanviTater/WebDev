@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXcercise 6</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            background-color: rgb(238, 238, 238);
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo img{
+            width: 164px;
+        }
+        ul{
+            display: flex;
+            gap: 34px;
+        }
+        .right ul li{
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            list-style: none;
+        }
+        .right ul li span{
+            padding: 0 5px;
+        }
+        .headline{
+            font-size: 40px;
+            font-weight: 700;
+            color: #141B34;
+            text-align: center;
+        }
+        .para{
+            padding: 50px;
+        }
+        .line{
+            text-align: center;
+            font-size: 30px;
+        }
+        .content{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            margin-top: 50px;
+            grid-template-columns: repeat(3,1fr);
+            row-gap: 2px;
+            column-gap: 2px;
+            justify-items: center;
+            align-items: center;
+        }
+        .boxes{
+            height: 300px;
+            width: 300px;
+        }
+        .boxes img{
+            width: 90px;
+            height: 90px;
+            margin: 0 auto;
+            display: block;
+        }
+        .boxes p{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" >
+                <img src="image.png" alt="image">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span>Products</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                    <li><span>For Business</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                    <li><span>Resources</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                    <li><span>Academic Licensing</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                    <li><span>Our Comapany</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                    <li><span>English</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="para">
+        <p class="line">Editor Features</p>
+        <p class="headline"> A wealth of functionality that can slot in and out of your workflow.</p>
+    </div>
+    <div class="content">
+        <div class="boxes">
+            <img decoding="async" width="90" height="90" src="https://www.ultraedit.com/wp-content/uploads/2023/01/Text-Code.png" alt="Text-Code" title="Text-Code" class="wp-image-29725 entered lazyloaded" data-lazy-src="https://www.ultraedit.com/wp-content/uploads/2023/01/Text-Code.png" data-ll-status="loaded">
+            <p style="font-size: large; font-weight: 700;">Text, code, and binary edit</p>
+            <p>Text, code, binary, log files, and more. Use a multitude of features to find, sort, arrange, and manipulate text data in any way.</p>
+        </div>
+        <div class="boxes">
+            <img decoding="async" width="113" height="113" src="https://www.ultraedit.com/wp-content/uploads/2023/01/FR.png" alt="Find and replace" title="FR" class="wp-image-29733 entered lazyloaded" data-lazy-src="https://www.ultraedit.com/wp-content/uploads/2023/01/FR.png" data-ll-status="loaded">
+            <p style="font-size: large; font-weight: 700;">Find and replace</p>
+            <p>Search and replace text in one or more text files using customized filters, targeting, and pattern matching techniques. Supports searching specific file types, project files, directories of files.</p>
+        </div>
+        <div class="boxes">
+            <img decoding="async" width="109" height="109" src="https://www.ultraedit.com/wp-content/uploads/2023/01/Compare.png" alt="File compare" title="Compare" class="wp-image-29741 entered lazyloaded" data-lazy-src="https://www.ultraedit.com/wp-content/uploads/2023/01/Compare.png" data-ll-status="loaded">
+            <p style="font-size: large; font-weight: 700;">File compare</p>
+            <p>Compare files or folders from within UltraEdit easily with native integration of UltraCompare—our powerful compare, merge, and sync tool.</p>
+        </div>
+        <div class="boxes">
+            <img decoding="async" width="92" height="92" src="https://www.ultraedit.com/wp-content/uploads/2023/01/XML.png" alt="XML manager" title="XML" class="wp-image-29749 entered lazyloaded" data-lazy-src="https://www.ultraedit.com/wp-content/uploads/2023/01/XML.png" data-ll-status="loaded">
+            <p style="font-size: large; font-weight: 700;">XML manager/View</p>
+            <p>Navigate through huge set of data or many nested nodes. Easily parse an XML tree, search, move nodes up and down, copy or cut nodes, and even duplicate with XML manager.</p>
+        </div>
+        <div class="boxes">
+            <img decoding="async" width="95" height="96" src="https://www.ultraedit.com/wp-content/uploads/2023/01/Web-Dev-2.png" alt="Web development" title="Web-Dev (2)" class="wp-image-30947 entered lazyloaded" data-lazy-src="https://www.ultraedit.com/wp-content/uploads/2023/01/Web-Dev-2.png" data-ll-status="loaded">
+            <p style="font-size: large; font-weight: 700;">Web development</p>
+            <p>Build websites with UE. Supports many web languages, an HTML toolbar, CSS style builder, and a tag list for easy access to frequently used code.</p>
+        </div>
+        <div class="boxes">
+            <img decoding="async" width="97" height="98" src="https://www.ultraedit.com/wp-content/uploads/2023/01/Custom-lang.png" alt="Custom language support" title="Custom-lang" class="wp-image-29765 entered lazyloaded" data-lazy-src="https://www.ultraedit.com/wp-content/uploads/2023/01/Custom-lang.png" data-ll-status="loaded">
+            <p style="font-size: large; font-weight: 700;">Custom language support</p>
+            <p>Work with any language or markup language with vast syntax highlighting support. Create and share your custom wordfiles or get one from the community library.</p>
+        </div>
+        <div class="boxes">
+            <img decoding="async" width="101" height="101" src="https://www.ultraedit.com/wp-content/uploads/2023/01/FTP.png" alt="Native FTP" title="FTP" class="wp-image-29773 entered lazyloaded" data-lazy-src="https://www.ultraedit.com/wp-content/uploads/2023/01/FTP.png" data-ll-status="loaded">
+            <p style="font-size: large; font-weight: 700;">Native FTP/SFT/FTPS</p>
+            <p>Access, modify, and save files via FTP. UltraEdit and UEStudio support standard FTP and SFTP protocols as well as FTPS (FTP over SSL).</p>
+        </div>
+        <div class="boxes">
+            <img decoding="async" width="99" height="99" src="https://www.ultraedit.com/wp-content/uploads/2023/01/Themes.png" alt="Custom Themes" title="Themes" class="wp-image-29781 entered lazyloaded" data-lazy-src="https://www.ultraedit.com/wp-content/uploads/2023/01/Themes.png" data-ll-status="loaded">
+            <p style="font-size: large; font-weight: 700;">Custom Themes</p>
+            <p>Control of the appearance of the application: from syntax highlighting, menus to dockable panes, from toolbars and editor colors to status bar styling.</p>
+        </div>
+        <div class="boxes">
+            <img decoding="async" width="97" height="97" src="https://www.ultraedit.com/wp-content/uploads/2023/01/Scriptmacros.png" alt="Scripting and Macros" title="Scriptmacros" class="wp-image-29789 entered lazyloaded" data-lazy-src="https://www.ultraedit.com/wp-content/uploads/2023/01/Scriptmacros.png" data-ll-status="loaded">
+            <p style="font-size: large; font-weight: 700;">Scripting and Macros</p>
+            <p>Simplify and automate repetitive tasks with scripts or macros. Record keystrokes or program instructions for faster and easier text processing.</p>
+        </div>
+    </div>
+</body>
+</html>
