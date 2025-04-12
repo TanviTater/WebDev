@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS object fit and position</title>
+    <style>
+        .container{
+            height: 488px;
+            width: 466px;
+            border: 2px solid black;
+            background-color: azure;
+        }
+        img{
+            width: 466px;
+            height: 488px;
+            /* object-fit: cover; This will crop the image to fit the container */
+
+            /* object-position: top left; This will position the image at the top left corner of the container    */
+
+            object-position: 10px 20px;
+            object-fit: contain;
+
+            /* object-fit: contain; This will scale the image to fit the container without cropping */
+
+            /* object-fit: fill; This will stretch the image to fill the container */
+
+            /* object-fit: scale-down; This will scale the image down to fit the container, but not stretch it */
+        }
+
+        .container2{
+            height: 488px;
+            width: 466px;
+            border: 2px solid black;
+            background-image: url(https://iso.500px.com/wp-content/uploads/2015/01/cockpit_cover.jpg);
+            /* background-position: top right; */
+            background-position: center center;
+            background-repeat: no-repeat;
+            /* background-clip: border-box; */
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://iso.500px.com/wp-content/uploads/2015/01/cockpit_cover.jpg" alt="Cockpit">
+    </div>
+
+    <div class="container2"></div>
+</body>
+</html>
