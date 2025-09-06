@@ -67,3 +67,35 @@ do{
     k++;
 }while(k<3);
 console.log("\n");
+
+let a1 = [1,93,5,6,88];
+
+// for loop
+for(let index  = 0;index<a1.length;index++){
+    const element = a1[index];
+    console.log(element);
+}
+console.log("\n");
+console.log("For-each loop");
+a1.forEach((value,index,arr) =>{
+    console.log(value,index,a1);
+})
+
+let obj2 = {
+    a:1,
+    b:2,
+    c:3
+}
+console.log("\n");
+console.log("For-in Loop");
+for(const key in obj2){
+    if(Object.hasOwnProperty.call(obj2,key)){
+        const element = obj2[key];
+        console.log(key,element);
+    }
+}
+console.log("\n");
+console.log("For -off Loop");
+for(const element of a1){
+    console.log(element);
+}
