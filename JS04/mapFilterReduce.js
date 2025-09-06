@@ -9,3 +9,18 @@ let newArr = arr.map((element,index,arr) =>{
     return element**2;
 })
 console.log(newArr);
+
+
+const greaterThanSeven = (e)=>{
+    if(e>7){
+        return true;
+    }
+    return false;
+}
+console.log(newArr.filter(greaterThanSeven));
+
+let a2 = [1,2,3,4,5,6];
+const red = (a,b)=>{
+    return a+b;
+}
+console.log(a2.reduce(red))
