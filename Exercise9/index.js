@@ -1,17 +1,21 @@
 // create a business name generator by combining list of adjectives  and shop name and another word
 console.log("Welcome to the Business Name Generator!");
-let adj ={
-    1: "Crazy",
-    2: "Amazing",
-    3: "Fire"
+let rand  = Math.random();
+let first,second,third;
+if(rand < 0.33){
+    first = "Crazy";
+    second = "Engine"
+    third = "Bros"
 }
-let shop ={
-    1: "Engine",
-    2: "Foods",
-    3: "Garments"
+else if(rand>=0.33 && rand<0.66){
+    first = "Amazing";
+    second = "Foods"
+    third = "Limited"
 }
-let otherName ={
-    1:"Bros",
-    2:"Limited",
-    3:"Hub"
+else{
+    first = "Fire";
+    second = "Garments"
+    third = "Hub"
 }
+
+console.log(`${first} ${second} ${third}`);
