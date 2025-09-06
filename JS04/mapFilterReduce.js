@@ -24,3 +24,5 @@ const red = (a,b)=>{
     return a+b;
 }
 console.log(a2.reduce(red))
+
+console.log(Array.from("Tanvi"));
